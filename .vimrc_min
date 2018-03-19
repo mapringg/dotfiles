@@ -1,0 +1,20 @@
+"General
+filetype plugin indent on
+set incsearch
+set hlsearch
+set relativenumber
+set number
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set wildmenu
+set hidden
+set ttimeoutlen=50
+set laststatus=2
+set nrformats=
+let mapleader="\<space>"
+nnoremap <leader>sv :source %<cr>
+nnoremap <leader>ev :e ~/.vimrc<cr>
+nnoremap <leader>w :w<cr>
+nnoremap <leader>q :q<cr>
