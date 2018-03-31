@@ -94,3 +94,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Docker
 export DOCKERID="mapringg"
+
+# Java
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
