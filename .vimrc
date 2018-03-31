@@ -6,6 +6,7 @@ Plug 'edkolev/tmuxline.vim' " Simple tmux statusline
 Plug 'tpope/vim-obsession' " Continuously update session files
 Plug 'w0rp/ale' " Linting
 Plug 'dracula/vim' " Dracula theme
+Plug 'lifepillar/vim-solarized8' "Solarized theme
 Plug 'honza/vim-snippets' " Snippet
 Plug 'SirVer/ultisnips'
 Plug 'Valloric/YouCompleteMe' " Autocomplete
@@ -50,7 +51,11 @@ au FileType tex :NoMatchParen
 map <F5> :!gcc -Wall -W -pedantic -o output % && ./output <CR>
 "Colorscheme
 set termguicolors
+let g:dracula_italic=0
 colorscheme dracula
+highlight Normal ctermbg=None
+" set background=dark
+" colorscheme solarized8
 "Fzf.vim
 nnoremap <leader>f :Files<cr>
 nnoremap <leader>a :Ag<cr>
@@ -84,6 +89,7 @@ map g# <Plug>(incsearch-nohl-g#)
 let g:airline#extensions#tabline#enabled=1
 let g:airline_powerline_fonts=0
 let g:airline_theme='dracula'
+" let g:airline_theme='solarized'
 "Easy motion
 let g:EasyMotion_do_mapping=0
 nmap s <Plug>(easymotion-overwin-f)
