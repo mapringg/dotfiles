@@ -27,7 +27,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'lervag/vimtex' " Latex
 call plug#end()
 "General
-set guifont=Fira\ Code:h16
+set guifont=Fira\ Code:h14
 set encoding=utf-8
 set incsearch
 set hlsearch
